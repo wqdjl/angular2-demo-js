@@ -1,0 +1,31 @@
+{
+  "name": "js-learn",
+  "version": "1.0.0",
+  "description": "angular2 javascript ",
+  "main": "main.js",
+  "scripts": {
+   
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "angular"
+  ],
+  "author": "dm",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/common": "^2.0.2",
+    "@angular/compiler": "^2.0.2",
+    "@angular/core": "^2.0.2",
+    "@angular/forms": "^2.0.2",
+    "@angular/platform-browser": "^2.0.2",
+    "@angular/platform-browser-dynamic": "^2.0.2",
+    "core-js": "^2.4.1",
+    "lite-server": "^2.2.2",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-rc.1",
+    "zone": "^0.3.4",
+    "zone.js": "^0.6.25"
+  }
+}
