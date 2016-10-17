@@ -4,7 +4,7 @@
   "description": "angular2 javascript ",
   "main": "main.js",
   "scripts": {
-   
+    "start": " \"lite-server\" ",
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
