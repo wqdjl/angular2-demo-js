@@ -5,7 +5,7 @@
         constructor:function() {
             for (let i = 1; i <= 3; i++) {
                 let dep = {
-                    Id: i,
+                    Id: lastId=i,
                     Name: "dep-" + i,
                 };
                 deps.push(dep);
@@ -35,7 +35,7 @@
             }
         },
         getList:function() {
-            return deps;//JSON.parse(JSON.stringify(deps));
+            return JSON.parse(JSON.stringify(deps));
         },
         get:function(id) {
             return deps.filter((dep) => {

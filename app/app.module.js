@@ -7,7 +7,8 @@
            ],
       declarations: [ 
         app.AppComponent,
-        app.DepartmentListComponent
+        app.DepartmentListComponent,
+        app.DepartmentDetailComponent
         ],
       providers:[
         app.DepartmentServer

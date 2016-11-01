@@ -1,5 +1,9 @@
+ <div class="form-group">
+        <button class="btn btn-default" (click)='onCreate()'>
+            Create
+        </button>
+    </div>
 <table class="table">
-    
         <tr>
             <th>Id</th>
             <th>Name</th>
@@ -10,7 +14,7 @@
         <tr *ngFor='let dep of deps'>
             <th>{{dep.Id}}</th>
             <th>{{dep.Name}}</th>
-            <th>{{dep.Remark}}</th>
+            <th>{{dep.Remark}}  </th>
             <th>
                 <button class="btn btn-default" (click)='onUpdate(dep)'>
                     Update
@@ -20,5 +24,6 @@
                 </button>
             </th>
         </tr>
-    
+        
+        <dep-detail [selecteddepartment]='selectedDep' (cancel)='onCreate()' (afterSaved)='getList()' ></dep-detail>
 </table>
