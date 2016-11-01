@@ -5,7 +5,13 @@
           ng.platformBrowser.BrowserModule,
           ng.forms.FormsModule
            ],
-      declarations: [ app.AppComponent ],
+      declarations: [ 
+        app.AppComponent,
+        app.DepartmentListComponent
+        ],
+      providers:[
+        app.DepartmentServer
+      ],
       bootstrap: [ app.AppComponent ]
     })
     .Class({

@@ -1,0 +1,24 @@
+<table class="table">
+    
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Remark</th>
+            <th></th>
+        </tr>
+     
+        <tr *ngFor='let dep of deps'>
+            <th>{{dep.Id}}</th>
+            <th>{{dep.Name}}</th>
+            <th>{{dep.Remark}}</th>
+            <th>
+                <button class="btn btn-default" (click)='onUpdate(dep)'>
+                    Update
+                </button>
+                <button class="btn btn-default" (click)='onDelete(dep)'>
+                    Delete
+                </button>
+            </th>
+        </tr>
+    
+</table>

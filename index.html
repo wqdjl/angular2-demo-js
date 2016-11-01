@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Angular QuickStart JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
 
-    <!-- 1. Load libraries -->
-    <!-- IE required polyfill -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+<head>
+	<title>Angular QuickStart JS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<!-- 1. Load libraries -->
+	<!-- IE required polyfill -->
+	<script src="node_modules/core-js/client/shim.min.js"></script>
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/zone.js/dist/zone.js"></script>
 
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+	<script src="node_modules/rxjs/bundles/Rx.js"></script>
 
-    <script src="node_modules/@angular/core/bundles/core.umd.js"></script>
-    <script src="node_modules/@angular/common/bundles/common.umd.js"></script>
-    <script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
-    <script src="node_modules/@angular/forms/bundles/forms.umd.js"></script>
-    <script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
-    <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+	<script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+	<script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+	<script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+	<script src="node_modules/@angular/forms/bundles/forms.umd.js"></script>
+	<script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+	<script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
 
-    <!-- 2. Load our 'modules' -->
-    <script src='app/app.component.js'></script>
-    <script src='app/app.module.js'></script>
-    <script src='app/main.js'></script>
+	<!-- 2. Load our 'modules' -->
+	<script src='app/department/department.server.js'></script>
+	<script src='app/department/department-list.component.js'></script>
 
-  </head>
+	<script src='app/app.component.js'></script>
+	<script src='app/app.module.js'></script>
+	<script src='app/main.js'></script>
 
-  <!-- 3. Display the application -->
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+	<div class="container">
+		<my-app>Loading...</my-app>
+	</div>
+</body>
 
 </html>
-
- 
