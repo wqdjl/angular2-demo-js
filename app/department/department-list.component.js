@@ -15,13 +15,14 @@
             this.selectedDep = {};
         },
         onUpdate: function (dep) {
-            this.selectedDep=  JSON.parse(JSON.stringify(dep));
+            this.selectedDep = JSON.parse(JSON.stringify(dep));
         },
         onDelete: function (dep) {
             this.depServer.delete(dep.Id);
+            this.getList();
         },
-       
-        getList:function(){
+
+        getList: function () {
             this.deps = this.depServer.getList();
         }
     });

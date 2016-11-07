@@ -21,7 +21,7 @@
             }],
             onSave: function () {
                 this.depServer.save(this.selecteddepartment);
-                this.afterSaved.next();
+                this.afterSaved.emit();
             },
             onCancel: function () {
                 this.cancel.next();

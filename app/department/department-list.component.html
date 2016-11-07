@@ -1,9 +1,10 @@
- <div class="form-group">
+ <div class="row">
         <button class="btn btn-default" (click)='onCreate()'>
             Create
         </button>
     </div>
-<table class="table">
+<div oncanplay="table-response">
+    <table class="table">
         <tr>
             <th>Id</th>
             <th>Name</th>
@@ -24,6 +25,8 @@
                 </button>
             </th>
         </tr>
+
+</table>
+</div>
         
         <dep-detail [selecteddepartment]='selectedDep' (cancel)='onCreate()' (afterSaved)='getList()' ></dep-detail>
-</table>
