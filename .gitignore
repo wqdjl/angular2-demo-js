@@ -1,2 +1,3 @@
 node_modules
-x.js.map
+*.js.map
+*.log
