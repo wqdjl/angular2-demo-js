@@ -8,7 +8,8 @@
       declarations: [ 
         app.AppComponent,
         app.DepartmentListComponent,
-        app.DepartmentDetailComponent
+        app.DepartmentDetailComponent,
+        app.highlight
         ],
       providers:[
         app.DepartmentServer

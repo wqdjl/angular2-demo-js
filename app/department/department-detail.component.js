@@ -25,6 +25,29 @@
             },
             onCancel: function () {
                 this.cancel.next();
+            },
+          
+            ngDoCheck: () => {
+                console.log("ngDoCheck-detail");
+            },
+            ngAfterContentInit: () => {
+                console.log("ngAfterContentInit-detail");
+            },
+            ngAfterContentChecked: () => {
+                console.log("ngAgterContentChecked-detail");
+            },
+            ngAfterViewInit: () => {
+                console.log("ngAfterViewInit-detail");
+            },
+            ngAfterViewChecked: () => {
+                console.log("ngAgterViewChecked-detail");
+            },
+            ngOnDestroy: () => {
+                alert("OnDestroy");
+                console.log("OnDestroy-detail");
+            },
+            ngOnChanges: () => {
+                console.log("ngOnChanges-detail");
             }
 
         })

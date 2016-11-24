@@ -7,10 +7,36 @@
         constructor: [app.DepartmentServer, function (depServer) {
             this.depServer = depServer;
         }],
+
         ngOnInit: function () {
             this.getList();
             this.selectedDep = {};
         },
+
+        ngDoCheck: () => {
+            console.log("ngDoCheck-list");
+        },
+        ngAfterContentInit: () => {
+            console.log("ngAfterContentInit-list");
+        },
+        ngAfterContentChecked: () => {
+            console.log("ngAgterContentChecked-list");
+        },
+        ngAfterViewInit: () => {
+            console.log("ngAfterViewInit-list");
+        },
+        ngAfterViewChecked: () => {
+            console.log("ngAgterViewChecked-list");
+        },
+        ngOnDestroy: () => {
+            alert("OnDestroy");
+            console.log("OnDestroy-list");
+        },
+        ngOnChanges: () => {
+            console.log("ngOnChanges-list");
+        },
+
+
         onCreate: function () {
             this.selectedDep = {};
         },
